@@ -6,7 +6,7 @@ function downloadDataset() {
     var formattedFiscalYear = fiscalYear.replace(/\s+/g, '');
     var fileName = "FY" + formattedFiscalYear + "_Dataset.xlsx";
     console.log("fileName");
-    var filePath = "/assets/files/" + fileName;
+    var filePath = "/payment-accuracy-temp-staging/assets/files/" + fileName;
 
     // Create a temporary link to trigger the download
     var a = document.createElement("a");
@@ -30,7 +30,7 @@ document.querySelectorAll('.expand-btn').forEach(button => {
         const icon = button.querySelector('.toggle-icon');
         const isCollapsed = icon.getAttribute('src').includes('expand.svg');
 
-        icon.setAttribute('src', isCollapsed ? '/assets/img/collapse.svg' : '/assets/img/expand.svg');
+        icon.setAttribute('src', isCollapsed ? '/payment-accuracy-temp-staging/assets/img/collapse.svg' : '/payment-accuracy-temp-staging/assets/img/expand.svg');
         icon.setAttribute('alt', isCollapsed ? 'Collapse' : 'Expand');
         button.setAttribute('aria-label', isCollapsed ? 'Collapse Agency' : 'Expand Agency');
         button.setAttribute('aria-expanded', isCollapsed);

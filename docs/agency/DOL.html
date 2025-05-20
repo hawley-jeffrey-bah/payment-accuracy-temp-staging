@@ -211,7 +211,7 @@ FY23 Payment Integrity reporting for PUA was census reporting covering the full 
                 </div>
                 <div class="grid-col hero-image-container">
                     <div class="hero-image">
-                        <img src="/payment-accuracy-temp-staging/assets/img/agency-specific-image.svg" alt="Agency-Specific Image">
+                        <img src="/payment-accuracy-temp-staging/assets/img/agency-specific-image.png" alt="Agency-Specific Image">
                     </div>
                 </div>
             </div>
@@ -224,53 +224,63 @@ FY23 Payment Integrity reporting for PUA was census reporting covering the full 
             </div>
             <h3 class="spending-trends-header">Agency Level Payment Integrity Results</h3>
             <ul class="usa-card-group grid-row grid-gap-6 spending-trends-cards">
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                    
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">68.4% - 91.1%</h4>
-                            <h5 class="margin-y-05">Payment accuracy rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[91.05861880435644, 81.19069790524149, 78.42910035979347, 68.3739180079296, 85.32491605214813]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="80"
+            data-max="100"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">68.4% - 91.1%</h4>
+        <h5 class="margin-y-05">Payment accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">8.9% - 20.9%</h4>
-                            <h5 class="margin-y-05">Improper payments rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[8.941381195643562, 18.600816136808337, 20.906746691854515, 17.506872991725807, 13.286763183084107]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="0"
+            data-max="10"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">8.9% - 20.9%</h4>
+        <h5 class="margin-y-05">Improper accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">0.0% - 14.1%</h4>
-                            <h5 class="margin-y-05">Unknown payments rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[0, 0.20848595795017832, 0.6641529483520157, 14.119209000344592, 1.388320764767764]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="0"
+            data-max="10"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">0.0% - 14.1%</h4>
+        <h5 class="margin-y-05">Unknown accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
             </ul>
         </div>
@@ -481,15 +491,11 @@ ETA also strongly recommends states use the following additional overpayment rec
 </footer>
 
 <script src="/payment-accuracy-temp-staging/assets/js/uswds.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/chart.umd.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/d3.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/plot.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/gridjs.umd.js"></script>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="/payment-accuracy-temp-staging/assets/js/scripts.js"></script>
+  <script src="/payment-accuracy-temp-staging/assets/js/chartBundle.min.js"></script>
 </body>
 
 </html>

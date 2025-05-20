@@ -200,7 +200,7 @@ The National Service Trust was in its first year of phase 2 testing as a result 
                 </div>
                 <div class="grid-col hero-image-container">
                     <div class="hero-image">
-                        <img src="/payment-accuracy-temp-staging/assets/img/agency-specific-image.svg" alt="Agency-Specific Image">
+                        <img src="/payment-accuracy-temp-staging/assets/img/agency-specific-image.png" alt="Agency-Specific Image">
                     </div>
                 </div>
             </div>
@@ -213,53 +213,63 @@ The National Service Trust was in its first year of phase 2 testing as a result 
             </div>
             <h3 class="spending-trends-header">Agency Level Payment Integrity Results</h3>
             <ul class="usa-card-group grid-row grid-gap-6 spending-trends-cards">
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                    
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">85.9% - 91.3%</h4>
-                            <h5 class="margin-y-05">Payment accuracy rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[89.26272403093596, 86.41797164566344, 85.85659131081962, 90.26732389223588, 91.27540041067762]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="80"
+            data-max="100"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">85.9% - 91.3%</h4>
+        <h5 class="margin-y-05">Payment accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">1.8% - 4.2%</h4>
-                            <h5 class="margin-y-05">Improper payments rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[3.158430973000509, 2.7865316901408455, 2.408596148478928, 4.220066244164515, 1.764928131416838]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="0"
+            data-max="10"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">1.8% - 4.2%</h4>
+        <h5 class="margin-y-05">Improper accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">5.5% - 11.7%</h4>
-                            <h5 class="margin-y-05">Unknown payments rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[7.57884499606354, 10.795496664195703, 11.73481254070146, 5.5126098635996135, 6.959671457905544]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="0"
+            data-max="10"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">5.5% - 11.7%</h4>
+        <h5 class="margin-y-05">Unknown accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
             </ul>
         </div>
@@ -436,15 +446,11 @@ The National Service Trust was in its first year of phase 2 testing as a result 
 </footer>
 
 <script src="/payment-accuracy-temp-staging/assets/js/uswds.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/chart.umd.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/d3.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/plot.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/gridjs.umd.js"></script>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="/payment-accuracy-temp-staging/assets/js/scripts.js"></script>
+  <script src="/payment-accuracy-temp-staging/assets/js/chartBundle.min.js"></script>
 </body>
 
 </html>

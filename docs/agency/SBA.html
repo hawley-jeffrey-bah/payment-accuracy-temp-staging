@@ -194,7 +194,7 @@ On an annual basis, the SBA monitors programmatic activities by reviewing the ou
                 </div>
                 <div class="grid-col hero-image-container">
                     <div class="hero-image">
-                        <img src="/payment-accuracy-temp-staging/assets/img/agency-specific-image.svg" alt="Agency-Specific Image">
+                        <img src="/payment-accuracy-temp-staging/assets/img/agency-specific-image.png" alt="Agency-Specific Image">
                     </div>
                 </div>
             </div>
@@ -207,53 +207,63 @@ On an annual basis, the SBA monitors programmatic activities by reviewing the ou
             </div>
             <h3 class="spending-trends-header">Agency Level Payment Integrity Results</h3>
             <ul class="usa-card-group grid-row grid-gap-6 spending-trends-cards">
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                    
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">78.3% - 97.3%</h4>
-                            <h5 class="margin-y-05">Payment accuracy rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[97.02719980986735, 97.29562044717102, 95.80447179816824, 78.32275223823234, 81.48595456966767]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="80"
+            data-max="100"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">78.3% - 97.3%</h4>
+        <h5 class="margin-y-05">Payment accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">2.3% - 5.2%</h4>
-                            <h5 class="margin-y-05">Improper payments rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[2.972800190132641, 2.57754825820309, 2.338245927952904, 3.87077025520683, 5.200780700125407]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="0"
+            data-max="10"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">2.3% - 5.2%</h4>
+        <h5 class="margin-y-05">Improper accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
-                <li class="usa-card tablet:grid-col-4">
+                <li class="usa-card mobile:grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                     <div class="usa-card__container border-base-lighter border-width-1px shadow-2">
-                        <div class="usa-card__body">
-                            <img
-                              class="vector-icon width-15 margin-bottom-05"
-                              src="/payment-accuracy-temp-staging/assets/img/vector-icon.svg"
-                              alt="vector icon"
-                            />
-                            <h4 class="margin-y-05">0.0% - 17.8%</h4>
-                            <h5 class="margin-y-05">Unknown payments rate</h5>
-                            <p class="text-base margin-y-05">
-                                (Based on federal funding spent by the agency in FY 2024)
-                            </p>
-                        </div>
-                    </div>
+    <div class="usa-card__body">
+        <canvas
+            data-series="[0, 0.12683129462588447, 1.8572822738788723, 17.806477506560817, 13.313264730206924]"
+            data-cy="2024"
+            data-color="rgba(84, 39, 143, 1)"
+            data-min="0"
+            data-max="10"
+            class="sparklines-chart">
+        </canvas>
+        <h4 class="margin-y-05">0.0% - 17.8%</h4>
+        <h5 class="margin-y-05">Unknown accuracy rate</h5>
+        <p class="text-base margin-y-05">
+            (Based on federal funding spent by the agency in FY 2024)
+        </p>
+    </div>
+</div>
                 </li>
             </ul>
         </div>
@@ -427,15 +437,11 @@ On an annual basis, the SBA monitors programmatic activities by reviewing the ou
 </footer>
 
 <script src="/payment-accuracy-temp-staging/assets/js/uswds.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/chart.umd.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/d3.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/plot.min.js"></script>
-<script src="/payment-accuracy-temp-staging/assets/js/gridjs.umd.js"></script>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="/payment-accuracy-temp-staging/assets/js/scripts.js"></script>
+  <script src="/payment-accuracy-temp-staging/assets/js/chartBundle.min.js"></script>
 </body>
 
 </html>

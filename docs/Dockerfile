@@ -27,7 +27,8 @@ RUN apt-get clean && \
 COPY . /app
 RUN bundle exec jekyll clean && \
     bundle exec jekyll build && \
-    npx gulp updateUswds
+    npx gulp updateUswds && \
+    npx gulp bundleChart
 
 
 # Stage 2: Build the final nginx image
